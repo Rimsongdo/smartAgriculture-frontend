@@ -109,7 +109,7 @@ function App() {
 
             <div className="">
               <div className="temptext">Température: <span className='values'>{fieldTemperature} °C</span></div>
-              <img src="/temp.png" width="30" height="30" alt="Temperature Icon" className='tempIm'/>
+              <img src="/temp.webp" width="30" height="30" alt="Temperature Icon" className='tempIm'/>
             </div>
 
             <div className="card3">
