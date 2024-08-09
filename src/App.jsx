@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://smartagriculture-backend.onrender.com/');
+    const ws = new WebSocket('wss://smartagriculture-backend.onrender.com/');
 
     ws.onopen = () => {
       console.log('WebSocket connected');
