@@ -63,7 +63,7 @@ function App() {
     const interval = setInterval(() => {
       setHover(true);
       setTimeout(() => setHover(false), 10000); // L'effet dure 10 secondes
-    }, 60000); // L'effet se déclenche toutes les minutes
+    }, 20000); // L'effet se déclenche toutes les minutes
 
     return () => clearInterval(interval);
   }, []);
@@ -88,28 +88,28 @@ function App() {
           <div className="mainsub">{location}</div>
         </div>
 
-        <div className="card2">
+        <div className={`card2 ${hover ? 'hover2' : ''}`}>
           <div className="upper">
             <div className="humidity">
               <div className="humiditytext">Humidité sol: <span className='values'>{soilHumidity}%</span></div>
-              <img src={'/soil.webp'} width="30" height="30" alt="Humidity Icon" className='humIm' />
+              <img src={'/soil.png'} width="30" height="30" alt="Humidity Icon" className='humIm' />
             </div>
 
             <div className="pnk">
               <div className="pnktext">PNK: <span className='values'>{PNK} mg</span></div>
-              <img src={'/pnk.webp'} width="30" height="30" alt="Air Quality Icon" className='pnkIm' />
+              <img src={'/pnk.png'} width="30" height="30" alt="Air Quality Icon" className='pnkIm' />
             </div>
           </div>
 
-          <div className="lower">
+          <div className={`lower ${hover ? 'hover3' : ''}`}>
             <div className="">
               <div className="soiltext">Humidité air: <span className='values'>{humidity}%</span></div>
-              <img src={'/hum.png'} width="30" height="30" alt="Soil Humidity Icon" className='soilIm'/>
+              <img src={'/hum.webp'} width="30" height="30" alt="Soil Humidity Icon" className='soilIm'/>
             </div>
 
             <div className="">
               <div className="temptext">Température: <span className='values'>{fieldTemperature} °C</span></div>
-              <img src="/temp.webp" width="30" height="30" alt="Temperature Icon" className='tempIm'/>
+              <img  src='/temp.webp' width="30" height="30" alt="Temperature Icon" className='tempIm'/>
             </div>
 
             <div className="card3">
