@@ -96,7 +96,7 @@ function App() {
             </div>
 
             <div className="pnk">
-              <div className="pnktext">PNK: <span className='values'>{PNK} mg</span></div>
+              <div className="pnktext">NPK: <span className='values'>{PNK} mg</span></div>
               <img src={'/pnk.png'} width="30" height="30" alt="Air Quality Icon" className='pnkIm' />
             </div>
           </div>
